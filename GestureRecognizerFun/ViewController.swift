@@ -28,13 +28,45 @@ class ViewController: UIViewController {
                 let square = UIView()
                 square.backgroundColor = randomColor()
                 square.layer.borderWidth = 0.5
-                square.layer.borderColor = UIColor.black.cgColor
+                square.layer.borderColor = UIColor.white.cgColor
                 square.frame = CGRect(x: i*squareWidth, y: j*squareWidth, width: squareWidth, height: squareWidth)
                 view.addSubview(square)
             }
         }
+        
+        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
- 
+    
+    @objc fileprivate func handlePan(gesture: UIPanGestureRecognizer) {
+        
+        let location = gesture.location(in: view)
+        
+        print(gesture.location(in: view))
+        
+        for subview in view.subviews {
+            
+            if subview.frame.contains(location) {
+                subview.backgroundColor = .white
+            }
+        }
+    }
+    
+    @objc fileprivate func handleTap(sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            
+            let location = sender.location(in: view)
+            
+            for subview in view.subviews {
+                
+                if subview.frame.contains(location) {
+                    subview.backgroundColor = .green
+                }
+            }
+        }
+    }
+    
     fileprivate func randomColor() -> UIColor {
         let redRandom = CGFloat(drand48())
         let greenRandom = CGFloat(drand48())
