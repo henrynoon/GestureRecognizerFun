@@ -61,7 +61,7 @@ class ViewController: UIViewController {
             for subview in view.subviews {
                 
                 if subview.frame.contains(location) {
-                    subview.backgroundColor = .green
+                    subview.backgroundColor = randomColor()
                 }
             }
         }

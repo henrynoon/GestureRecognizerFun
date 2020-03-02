@@ -13,7 +13,18 @@
 		5E0693EA240BEA0200C3409A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0693E8240BEA0200C3409A /* Main.storyboard */; };
 		5E0693EC240BEA0300C3409A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0693EB240BEA0300C3409A /* Assets.xcassets */; };
 		5E0693EF240BEA0300C3409A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0693ED240BEA0300C3409A /* LaunchScreen.storyboard */; };
+		5E0693FD240D241000C3409A /* GestureRecognizerFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0693FC240D241000C3409A /* GestureRecognizerFunTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E0693FF240D241000C3409A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E0693D7240BEA0200C3409A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E0693DE240BEA0200C3409A;
+			remoteInfo = GestureRecognizerFun;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5E0693DF240BEA0200C3409A /* GestureRecognizerFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureRecognizerFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		5E0693EB240BEA0300C3409A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E0693EE240BEA0300C3409A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E0693F0240BEA0300C3409A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0693FA240D241000C3409A /* GestureRecognizerFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GestureRecognizerFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0693FC240D241000C3409A /* GestureRecognizerFunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerFunTests.swift; sourceTree = "<group>"; };
+		5E0693FE240D241000C3409A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5E0693DC240BEA0200C3409A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E0693F7240D241000C3409A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				5E0693E1240BEA0200C3409A /* GestureRecognizerFun */,
+				5E0693FB240D241000C3409A /* GestureRecognizerFunTests */,
 				5E0693E0240BEA0200C3409A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5E0693DF240BEA0200C3409A /* GestureRecognizerFun.app */,
+				5E0693FA240D241000C3409A /* GestureRecognizerFunTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				5E0693F0240BEA0300C3409A /* Info.plist */,
 			);
 			path = GestureRecognizerFun;
+			sourceTree = "<group>";
+		};
+		5E0693FB240D241000C3409A /* GestureRecognizerFunTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E0693FC240D241000C3409A /* GestureRecognizerFunTests.swift */,
+				5E0693FE240D241000C3409A /* Info.plist */,
+			);
+			path = GestureRecognizerFunTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 5E0693DF240BEA0200C3409A /* GestureRecognizerFun.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5E0693F9240D241000C3409A /* GestureRecognizerFunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E069403240D241000C3409A /* Build configuration list for PBXNativeTarget "GestureRecognizerFunTests" */;
+			buildPhases = (
+				5E0693F6240D241000C3409A /* Sources */,
+				5E0693F7240D241000C3409A /* Frameworks */,
+				5E0693F8240D241000C3409A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E069400240D241000C3409A /* PBXTargetDependency */,
+			);
+			name = GestureRecognizerFunTests;
+			productName = GestureRecognizerFunTests;
+			productReference = 5E0693FA240D241000C3409A /* GestureRecognizerFunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +149,10 @@
 				TargetAttributes = {
 					5E0693DE240BEA0200C3409A = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					5E0693F9240D241000C3409A = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 5E0693DE240BEA0200C3409A;
 					};
 				};
 			};
@@ -116,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				5E0693DE240BEA0200C3409A /* GestureRecognizerFun */,
+				5E0693F9240D241000C3409A /* GestureRecognizerFunTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 				5E0693EF240BEA0300C3409A /* LaunchScreen.storyboard in Resources */,
 				5E0693EC240BEA0300C3409A /* Assets.xcassets in Resources */,
 				5E0693EA240BEA0200C3409A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E0693F8240D241000C3409A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E0693F6240D241000C3409A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E0693FD240D241000C3409A /* GestureRecognizerFunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E069400240D241000C3409A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E0693DE240BEA0200C3409A /* GestureRecognizerFun */;
+			targetProxy = 5E0693FF240D241000C3409A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5E0693E8240BEA0200C3409A /* Main.storyboard */ = {
@@ -316,6 +394,46 @@
 			};
 			name = Release;
 		};
+		5E069401240D241000C3409A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8H6TS5PT7T;
+				INFOPLIST_FILE = GestureRecognizerFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HenryNoon.GestureRecognizerFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GestureRecognizerFun.app/GestureRecognizerFun";
+			};
+			name = Debug;
+		};
+		5E069402240D241000C3409A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8H6TS5PT7T;
+				INFOPLIST_FILE = GestureRecognizerFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HenryNoon.GestureRecognizerFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GestureRecognizerFun.app/GestureRecognizerFun";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +451,15 @@
 			buildConfigurations = (
 				5E0693F4240BEA0300C3409A /* Debug */,
 				5E0693F5240BEA0300C3409A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E069403240D241000C3409A /* Build configuration list for PBXNativeTarget "GestureRecognizerFunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E069401240D241000C3409A /* Debug */,
+				5E069402240D241000C3409A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
