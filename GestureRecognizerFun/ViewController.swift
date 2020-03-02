@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         for i in 0...numOfSquaresPerRow {
             for j in 0...numOfVerticals {
                 let square = UIView()
-                square.backgroundColor = randomColor()
+                square.backgroundColor = setRandomColor()
                 square.layer.borderWidth = 0.5
                 square.layer.borderColor = UIColor.white.cgColor
                 square.frame = CGRect(x: i*squareWidth, y: j*squareWidth, width: squareWidth, height: squareWidth)
@@ -61,13 +61,13 @@ class ViewController: UIViewController {
             for subview in view.subviews {
                 
                 if subview.frame.contains(location) {
-                    subview.backgroundColor = randomColor()
+                    subview.backgroundColor = setRandomColor()
                 }
             }
         }
     }
     
-    fileprivate func randomColor() -> UIColor {
+    internal func setRandomColor() -> UIColor {
         let redRandom = CGFloat(drand48())
         let greenRandom = CGFloat(drand48())
         let blueRandom = CGFloat(drand48())
@@ -75,4 +75,3 @@ class ViewController: UIViewController {
         return UIColor(displayP3Red: redRandom, green: greenRandom, blue: blueRandom, alpha: 1)
     }
 }
-

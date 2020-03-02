@@ -7,9 +7,19 @@
 //
 
 import XCTest
+@testable import GestureRecognizerFun
 
 class GestureRecognizerFunTests: XCTestCase {
-
+    
+    func testSetColor() {
+        let viewController = ViewController()
+        
+        let view = UIView()
+        view.backgroundColor = viewController.setRandomColor()
+        
+        XCTAssertNotNil(view.backgroundColor, "Sorry, it's nil")
+    }
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
